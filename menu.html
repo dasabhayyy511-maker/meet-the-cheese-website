@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet The Cheese | Menu</title>
+    <meta name="description" content="Selected menu items from Meet The Cheese including burgers, combos, sides, pasta, and drinks across both branches.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="index.html" aria-label="Meet The Cheese home">`r`n                <span class="brand-logo-image-wrap">`r`n                    <img src="Images/Logo.png" alt="Meet The Cheese" class="brand-logo-image">`r`n                </span>`r`n                <span class="brand-copy">`r`n                    <strong>Meet The Cheese</strong>`r`n                    <span>Ajman & Ras Al Khaimah</span>`r`n                </span>`r`n            </a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn-small" href="tel:+971501164065">Call Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell page-main">
+        <section class="page-hero compact">
+            <p class="eyebrow">Menu</p>
+            <h1>Click any item to view its details.</h1>
+            <p class="lead-text short">This demo keeps the menu clean while still letting a customer explore each highlighted item one by one.</p>
+        </section>
+
+        <section class="menu-grid-visual">
+            <article class="menu-visual-card visual-zinger">
+                <div class="image-slot"><span>Food image preview</span></div>
+                <div class="menu-card-body">
+                    <h3>Zinger Favorites</h3>
+                    <button class="menu-row menu-trigger active" type="button" data-item="classic-zinger"><strong>Classic Zinger</strong><span>AED 21 / 29</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="hollandise"><strong>Hollandise</strong><span>AED 18 / 26</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="zingwich"><strong>Zingwich</strong><span>AED 12 / 20</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="buffalo-zinger-burger"><strong>Buffalo Zinger Burger</strong><span>AED 20 / 28</span></button>
+                </div>
+            </article>
+
+            <article class="menu-visual-card visual-beef">
+                <div class="image-slot"><span>Food image preview</span></div>
+                <div class="menu-card-body">
+                    <h3>Smash & Beef</h3>
+                    <button class="menu-row menu-trigger" type="button" data-item="three-star"><strong>Three Star</strong><span>AED 25 / 33</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="royal-feast"><strong>Royal Feast</strong><span>AED 20 / 28</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="mushroom-beef-burger"><strong>Mushroom Beef Burger</strong><span>AED 20 / 28</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="classic-beef-burger"><strong>Classic Beef Burger</strong><span>AED 20 / 28</span></button>
+                </div>
+            </article>
+
+            <article class="menu-visual-card visual-combo">
+                <div class="image-slot"><span>Food image preview</span></div>
+                <div class="menu-card-body">
+                    <h3>Combos & Meals</h3>
+                    <button class="menu-row menu-trigger" type="button" data-item="cheetos-punch"><strong>Cheetos Punch</strong><span>AED 55</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="viral-combo"><strong>Viral Combo</strong><span>AED 74</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="biggy-meal"><strong>Biggy Meal</strong><span>AED 58</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="zinger-treat"><strong>Zinger Treat</strong><span>AED 36</span></button>
+                </div>
+            </article>
+
+            <article class="menu-visual-card visual-sides">
+                <div class="image-slot"><span>Food image preview</span></div>
+                <div class="menu-card-body">
+                    <h3>Sides & Drinks</h3>
+                    <button class="menu-row menu-trigger" type="button" data-item="dynamite-shrimp"><strong>Dynamite Shrimp</strong><span>AED 25</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="cheese-fries"><strong>Cheese Fries</strong><span>AED 15</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="alfredo-shrimp-pasta"><strong>Alfredo Shrimp Pasta</strong><span>AED 29</span></button>
+                    <button class="menu-row menu-trigger" type="button" data-item="passion-fruit-mojito"><strong>Passion Fruit Mojito</strong><span>AED 13</span></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="item-detail-section" id="item-detail-section">
+            <div class="item-detail-panel">
+                <div class="item-detail-visual">
+                    <div class="image-slot image-slot-large"><span>Selected item preview</span></div>
+                </div>
+                <div class="item-detail-copy">
+                    <p class="eyebrow" id="detail-category">Zinger Favorite</p>
+                    <h2 id="detail-name">Classic Zinger</h2>
+                    <p class="detail-price" id="detail-price">AED 21 / 29</p>
+                    <p class="detail-description" id="detail-description">A crispy signature sandwich with a bold profile that works as one of the most recognizable picks on the menu.</p>
+                    <div class="detail-meta-grid">
+                        <article>
+                            <h3>Best For</h3>
+                            <p id="detail-best-for">Customers looking for a familiar crowd-pleaser.</p>
+                        </article>
+                        <article>
+                            <h3>Category</h3>
+                            <p id="detail-group">Zinger Favorites</p>
+                        </article>
+                        <article>
+                            <h3>Style</h3>
+                            <p id="detail-style">Crispy, cheesy, and filling.</p>
+                        </article>
+                        <article>
+                            <h3>Demo Note</h3>
+                            <p>Final food photography can replace this branded placeholder image later.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">More Items</p>
+                <h2>Extra menu highlights</h2>
+            </div>
+            <div class="feature-grid more-items-grid">
+                <article class="info-card interactive-card">
+                    <h3>Toast & Sandwiches</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="mac-n-zinger-toast">Mac N Zinger Toast</button>
+                        <button class="menu-link-trigger" type="button" data-item="crunchy-toast">Crunchy Toast</button>
+                        <button class="menu-link-trigger" type="button" data-item="cheetos-zinger">Cheetos Zinger</button>
+                        <button class="menu-link-trigger" type="button" data-item="beef-steak-sandwich">Beef Steak Sandwich</button>
+                    </div>
+                </article>
+                <article class="info-card interactive-card">
+                    <h3>Wraps</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="spicy-twister">Spicy Twister</button>
+                        <button class="menu-link-trigger" type="button" data-item="cheetos-twister">Cheetos Twister</button>
+                        <button class="menu-link-trigger" type="button" data-item="classic-beef-wrap">Classic Beef Wrap</button>
+                        <button class="menu-link-trigger" type="button" data-item="classic-chicken-wrap">Classic Chicken Wrap</button>
+                    </div>
+                </article>
+                <article class="info-card interactive-card">
+                    <h3>Add Ons</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="melted-cheddar-cheese">Melted Cheddar Cheese</button>
+                        <button class="menu-link-trigger" type="button" data-item="extra-patty-chicken">Extra Patty Chicken</button>
+                        <button class="menu-link-trigger" type="button" data-item="potato-wedges">Potato Wedges</button>
+                        <button class="menu-link-trigger" type="button" data-item="curly-fries">Curly Fries</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+        <div>
+            <strong>Meet The Cheese</strong>
+            <p>Restaurant website concept for both branches.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

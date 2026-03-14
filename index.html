@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet The Cheese</title>
+    <meta name="description" content="Meet The Cheese serves burgers, wraps, combo meals, fries, pasta, and drinks with bold flavor across Ajman and Ras Al Khaimah.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="has-intro">
+    <div class="intro-overlay" id="intro-overlay" aria-hidden="true">
+        <div class="intro-logo-wrap">
+            <img src="Images/Logo.png" alt="Meet The Cheese logo animation" class="intro-logo">
+            <div class="intro-glow"></div>
+        </div>
+    </div>
+
+    <header class="site-header" id="home">
+        <nav class="navbar">
+            <a class="brand" href="#home" aria-label="Meet The Cheese home">
+                <span class="brand-logo-image-wrap">
+                    <img src="Images/Logo.png" alt="Meet The Cheese" class="brand-logo-image" id="nav-logo">
+                </span>
+                <span class="brand-copy">
+                    <strong>Meet The Cheese</strong>
+                    <span>Ajman & Ras Al Khaimah</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a class="active" href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#socials">Socials</a>
+                <a href="#contact">Contact</a>
+                <a class="btn btn-small" href="tel:+971501164065">Call Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section page-shell">
+            <div class="hero-copy-block">
+                <p class="eyebrow">Ajman & Ras Al Khaimah</p>
+                <h1>Bold burgers, loaded meals, and a brand customers remember.</h1>
+                <p class="lead-text">
+                    Meet The Cheese brings a premium fast-food vibe across both branches with zinger burgers, smash burgers, wraps,
+                    combo meals, appetizers, pasta, and drinks.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#menu">View Menu</a>
+                    <a class="btn btn-secondary" href="https://www.instagram.com/meetthecheese/" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+            <div class="hero-spotlight">
+                <article class="spotlight-card featured">
+                    <span class="chip">Top Picks</span>
+                    <h2>Classic Zinger</h2>
+                    <p>Crispy, bold, and one of the strongest signatures on the menu.</p>
+                    <strong>From AED 21</strong>
+                </article>
+                <article class="spotlight-card">
+                    <span class="chip">Combo Favorite</span>
+                    <h2>Cheetos Punch</h2>
+                    <p>Made to stand out and built for sharing.</p>
+                    <strong>AED 55</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section page-shell" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow">Menu</p>
+                <h2>Explore signature items from the menu.</h2>
+                <p class="lead-text short">Select any item to view its category, pricing, and menu highlights.</p>
+            </div>
+
+            <div class="menu-grid-visual">
+                <article class="menu-visual-card visual-zinger">
+                    <div class="image-slot"><span>Signature visual</span></div>
+                    <div class="menu-card-body">
+                        <h3>Zinger Favorites</h3>
+                        <button class="menu-row menu-trigger active" type="button" data-item="classic-zinger"><strong>Classic Zinger</strong><span>AED 21 / 29</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="hollandise"><strong>Hollandise</strong><span>AED 18 / 26</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="zingwich"><strong>Zingwich</strong><span>AED 12 / 20</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="buffalo-zinger-burger"><strong>Buffalo Zinger Burger</strong><span>AED 20 / 28</span></button>
+                    </div>
+                </article>
+
+                <article class="menu-visual-card visual-beef">
+                    <div class="image-slot"><span>Signature visual</span></div>
+                    <div class="menu-card-body">
+                        <h3>Smash & Beef</h3>
+                        <button class="menu-row menu-trigger" type="button" data-item="three-star"><strong>Three Star</strong><span>AED 25 / 33</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="royal-feast"><strong>Royal Feast</strong><span>AED 20 / 28</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="mushroom-beef-burger"><strong>Mushroom Beef Burger</strong><span>AED 20 / 28</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="classic-beef-burger"><strong>Classic Beef Burger</strong><span>AED 20 / 28</span></button>
+                    </div>
+                </article>
+
+                <article class="menu-visual-card visual-combo">
+                    <div class="image-slot"><span>Signature visual</span></div>
+                    <div class="menu-card-body">
+                        <h3>Combos & Meals</h3>
+                        <button class="menu-row menu-trigger" type="button" data-item="cheetos-punch"><strong>Cheetos Punch</strong><span>AED 55</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="viral-combo"><strong>Viral Combo</strong><span>AED 74</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="biggy-meal"><strong>Biggy Meal</strong><span>AED 58</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="zinger-treat"><strong>Zinger Treat</strong><span>AED 36</span></button>
+                    </div>
+                </article>
+
+                <article class="menu-visual-card visual-sides">
+                    <div class="image-slot"><span>Signature visual</span></div>
+                    <div class="menu-card-body">
+                        <h3>Sides & Drinks</h3>
+                        <button class="menu-row menu-trigger" type="button" data-item="dynamite-shrimp"><strong>Dynamite Shrimp</strong><span>AED 25</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="cheese-fries"><strong>Cheese Fries</strong><span>AED 15</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="alfredo-shrimp-pasta"><strong>Alfredo Shrimp Pasta</strong><span>AED 29</span></button>
+                        <button class="menu-row menu-trigger" type="button" data-item="passion-fruit-mojito"><strong>Passion Fruit Mojito</strong><span>AED 13</span></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="item-detail-section" id="item-detail-section">
+            <div class="item-detail-panel">
+                <div class="item-detail-visual">
+                    <div class="image-slot image-slot-large"><span>Menu highlight</span></div>
+                </div>
+                <div class="item-detail-copy">
+                    <p class="eyebrow" id="detail-category">Zinger Favorite</p>
+                    <h2 id="detail-name">Classic Zinger</h2>
+                    <p class="detail-price" id="detail-price">AED 21 / 29</p>
+                    <p class="detail-description" id="detail-description">A crispy signature sandwich with a bold profile that works as one of the most recognizable picks on the menu.</p>
+                    <div class="detail-meta-grid">
+                        <article>
+                            <h3>Best For</h3>
+                            <p id="detail-best-for">Customers looking for a familiar crowd-pleaser.</p>
+                        </article>
+                        <article>
+                            <h3>Category</h3>
+                            <p id="detail-group">Zinger Favorites</p>
+                        </article>
+                        <article>
+                            <h3>Style</h3>
+                            <p id="detail-style">Crispy, cheesy, and filling.</p>
+                        </article>
+                        <article>
+                            <h3>Available At</h3>
+                            <p>Ajman and Ras Al Khaimah branches.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section page-shell">
+            <div class="section-heading">
+                <p class="eyebrow">More Items</p>
+                <h2>Extra menu highlights</h2>
+            </div>
+            <div class="feature-grid more-items-grid">
+                <article class="info-card interactive-card">
+                    <h3>Toast & Sandwiches</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="mac-n-zinger-toast">Mac N Zinger Toast</button>
+                        <button class="menu-link-trigger" type="button" data-item="crunchy-toast">Crunchy Toast</button>
+                        <button class="menu-link-trigger" type="button" data-item="cheetos-zinger">Cheetos Zinger</button>
+                        <button class="menu-link-trigger" type="button" data-item="beef-steak-sandwich">Beef Steak Sandwich</button>
+                    </div>
+                </article>
+                <article class="info-card interactive-card">
+                    <h3>Wraps</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="spicy-twister">Spicy Twister</button>
+                        <button class="menu-link-trigger" type="button" data-item="cheetos-twister">Cheetos Twister</button>
+                        <button class="menu-link-trigger" type="button" data-item="classic-beef-wrap">Classic Beef Wrap</button>
+                        <button class="menu-link-trigger" type="button" data-item="classic-chicken-wrap">Classic Chicken Wrap</button>
+                    </div>
+                </article>
+                <article class="info-card interactive-card">
+                    <h3>Add Ons</h3>
+                    <div class="more-item-list">
+                        <button class="menu-link-trigger" type="button" data-item="melted-cheddar-cheese">Melted Cheddar Cheese</button>
+                        <button class="menu-link-trigger" type="button" data-item="extra-patty-chicken">Extra Patty Chicken</button>
+                        <button class="menu-link-trigger" type="button" data-item="potato-wedges">Potato Wedges</button>
+                        <button class="menu-link-trigger" type="button" data-item="curly-fries">Curly Fries</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section page-shell" id="socials">
+            <div class="section-heading">
+                <p class="eyebrow">Socials</p>
+                <h2>See Meet The Cheese in action on Instagram.</h2>
+                <p class="lead-text short">Explore our latest food content, signature highlights, and brand moments on Instagram.</p>
+            </div>
+            <div class="feature-grid reel-grid">
+                <a class="info-card reel-card" href="https://www.instagram.com/meetthecheese/" target="_blank" rel="noopener" aria-label="Open Meet The Cheese Instagram highlight 1">
+                    <div class="reel-thumb reel-one">
+                        <div class="reel-overlay-meta">
+                            <strong>It&apos;s Halal Beef Bacon</strong>
+                        </div>
+                    </div>
+                    <h3>Loaded Burger Drop</h3>
+                    <p>Tap to explore more on our Instagram.</p>
+                </a>
+                <a class="info-card reel-card" href="https://www.instagram.com/meetthecheese/" target="_blank" rel="noopener" aria-label="Open Meet The Cheese Instagram highlight 2">
+                    <div class="reel-thumb reel-two">
+                        <div class="reel-overlay-meta">
+                            <strong>Doppler Extra Meal</strong>
+                        </div>
+                    </div>
+                    <h3>Combo Meal Feature</h3>
+                    <p>Tap to explore more on our Instagram.</p>
+                </a>
+                <a class="info-card reel-card" href="https://www.instagram.com/meetthecheese/" target="_blank" rel="noopener" aria-label="Open Meet The Cheese Instagram highlight 3">
+                    <div class="reel-thumb reel-three">
+                        <div class="reel-overlay-meta">
+                            <strong>Monster Meal Reveal</strong>
+                        </div>
+                    </div>
+                    <h3>Signature Cravings</h3>
+                    <p>Tap to explore more on our Instagram.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section page-shell" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Visit, call, or message the nearest branch directly.</h2>
+                <p class="lead-text short">Reach the nearest branch quickly for inquiries, takeaway, or ordering support.</p>
+            </div>
+            <div class="feature-grid contact-grid-cards">
+                <article class="info-card large-card">
+                    <h2>Ajman Branch</h2>
+                    <p>Al Hamidiya 1 - Ajman</p>
+                    <p><a href="tel:+971501164065">+971 50 116 4065</a></p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="tel:+971501164065">Call Now</a>
+                        <a class="btn btn-secondary" href="https://wa.me/971501164065" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </article>
+                <article class="info-card large-card">
+                    <h2>Ras Al Khaimah Branch</h2>
+                    <p>Near Hadaf Supermarket, Ma Mora, Ras Al Khaimah</p>
+                    <p>Serving customers with the same bold menu and signature brand experience.</p>
+                </article>
+                <article class="info-card large-card">
+                    <h2>Follow The Brand</h2>
+                    <ul class="clean-list">
+                        <li><a href="https://www.instagram.com/meetthecheese/" target="_blank" rel="noopener">Instagram: @meetthecheese</a></li>
+                        <li>Direct call access</li>
+                        <li>WhatsApp support for quick contact</li>
+                        <li>Easy branch visibility across both locations</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+        <div>
+            <strong>Meet The Cheese</strong>
+            <p>Bold burgers, loaded meals, and standout fast-food favorites across Ajman and Ras Al Khaimah.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#menu">Menu</a>
+            <a href="#socials">Socials</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
